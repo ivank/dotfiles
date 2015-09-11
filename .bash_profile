@@ -1,4 +1,11 @@
 
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+source .bash_prompt
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
@@ -29,4 +36,7 @@ fi;
 if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
 fi
+
+# Load general colorizer
+source "`brew --prefix grc`/etc/grc.bashrc"
 

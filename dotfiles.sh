@@ -30,7 +30,3 @@ if [[ $BASH_VERSINFO < 4 ]]; then
 	# Change the shell for the user
 	chsh -s /usr/local/bin/bash
 fi
-
-# Set vim as default editor
-export VISUAL=vim
-export EDITOR="$VISUAL"
