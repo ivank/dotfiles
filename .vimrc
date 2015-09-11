@@ -2,9 +2,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/vim-scripts/ScrollColors'  "ScrollBar Colors
 Plug 'tpope/vim-surround'   "Awesome, cs{old}{new} to change surround
-Plug 'scrooloose/nerdtree'  "Nerdtree
 Plug 'ervandew/supertab'    "Tab for insert-completion
 Plug 'jpo/vim-railscasts-theme'
+Plug 'https://github.com/ConradIrwin/vim-bracketed-paste'
 Plug 'bling/vim-airline'    "Airline
 
 
