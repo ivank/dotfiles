@@ -1,9 +1,13 @@
 
+# Enable colors for the ls command
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Set vim as the default editor in the terminal
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Load bash prompt
 source .bash_prompt
 
 # Case-insensitive globbing (used in pathname expansion)
