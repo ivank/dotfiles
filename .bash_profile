@@ -8,7 +8,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Load bash prompt
-source .bash_prompt
+source ~/.bash_prompt
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
