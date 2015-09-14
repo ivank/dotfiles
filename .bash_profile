@@ -45,3 +45,6 @@ source "`brew --prefix grc`/etc/grc.bashrc"
 # Alias github's hub to git
 # https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
+
+# Add globally installed composer binaries to the PATH
+export PATH="$PATH:$HOME/.composer/vendor/bin"
