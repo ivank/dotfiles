@@ -5,8 +5,9 @@ Plug 'tpope/vim-surround'   "Awesome, cs{old}{new} to change surround
 Plug 'ervandew/supertab'    "Tab for insert-completion
 Plug 'jpo/vim-railscasts-theme'
 Plug 'https://github.com/ConradIrwin/vim-bracketed-paste'
-Plug 'bling/vim-airline'    "Airline
-
+Plug 'bling/vim-airline'    "Airline - The bottom status bar
+Plug 'scrooloose/syntastic' "Linters
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
