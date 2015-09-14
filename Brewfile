@@ -24,6 +24,7 @@ brew 'unixodbc'
 brew 'vim', args: ['override-system-vi']
 brew 'caskroom/cask/brew-cask'
 brew 'homebrew/completions/vagrant-completion'
+brew 'homebrew/php/composer'
 brew 'homebrew/php/php56'
 cask 'betterzipql'
 cask 'github-desktop'
