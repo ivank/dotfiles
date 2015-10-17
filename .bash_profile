@@ -7,6 +7,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# set UTF-8 locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Load bash prompt
 source ~/.bash_prompt
 
