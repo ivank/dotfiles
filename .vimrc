@@ -26,7 +26,6 @@ set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 
 " Searching
-set hlsearch                    " highlight matches
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 set clipboard=unnamed           " Enable Mac OS X clippobard sharing
