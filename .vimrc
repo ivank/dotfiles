@@ -29,6 +29,7 @@ set expandtab                   " use spaces, not tabs (optional)
 set hlsearch                    " highlight matches
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+set clipboard=unnamed           " Enable Mac OS X clippobard sharing
 
 " Colorscheme
 colorscheme railscasts
