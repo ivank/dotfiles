@@ -9,6 +9,7 @@ Plug 'bling/vim-airline'    "Airline - The bottom status bar
 Plug 'scrooloose/syntastic' "Linters
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-sensible'  "Sensible vim defaults
+Plug 'elixir-lang/vim-elixir' "Elixir syntx
 
 call plug#end()
 
