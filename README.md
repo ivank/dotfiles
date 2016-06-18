@@ -22,7 +22,7 @@ Or better yet, fork it in github, and use that as your origin url (so you can do
 After you're done you initiate the install by calling
 
 ``` bash
-./dotfiles.sh
+./mac.sh
 ```
 
 This script is designed to be rerun multiple times.
