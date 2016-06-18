@@ -44,7 +44,9 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Load general colorizer
-source "`brew --prefix grc`/etc/grc.bashrc"
+if which brew > /dev/null; then
+    source "`brew --prefix grc`/etc/grc.bashrc";
+fi
 
 # Alias github's hub to git
 # https://github.com/github/hub#aliasing
