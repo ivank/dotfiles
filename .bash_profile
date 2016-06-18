@@ -54,3 +54,6 @@ eval "$(hub alias -s)"
 
 # Add globally installed composer binaries to the PATH
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# added by travis gem
+[ -f ~/travis.sh ] && source ~/travis.sh
