@@ -1,6 +1,7 @@
 # dotfiles
 
 Bootrap my osx system. Keep my dotfiles inside verstion control to allow rapid rebuild of the system.
+Also supports ubuntu in a limited capacity so far.
 
 ## Usage
 
@@ -24,8 +25,20 @@ After you're done you initiate the install by calling
 ``` bash
 ./mac.sh
 ```
+Or for ubuntu
+``` bash
+./ubuntu.sh
+```
 
 This script is designed to be rerun multiple times.
+
+You'll need to add a `.gitconfig_user` file to setup your git user (and not modify the .gitconfig file)
+Example content:
+``` gitconfig
+[user]
+    name = MY NAME
+    email = MY EMAIL
+```
 
 ## Docs
 

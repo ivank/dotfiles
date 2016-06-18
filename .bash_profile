@@ -1,6 +1,11 @@
 
 # Enable colors for the ls command
-export CLICOLOR=1
+if [ "$NONGNU" ]; then
+	export CLICOLOR=1;
+else
+	alias ls="ls --color=auto";
+fi
+
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set vim as the default editor in the terminal
@@ -46,6 +51,11 @@ fi
 # Load general colorizer
 if which brew > /dev/null; then
     source "`brew --prefix grc`/etc/grc.bashrc";
+fi
+
+# Load general colorizer for non-brew systems
+if [ -f ~/.grc/.grc.bashrc ]; then 
+	source ~/.grc/.grc.bashrc;
 fi
 
 # Alias github's hub to git
