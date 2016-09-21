@@ -1,6 +1,6 @@
 
 # Enable colors for the ls command
-if [ "$NONGNU" ]; then
+if [[ "$OSTYPE" == "darwin"* ]]; then
 	export CLICOLOR=1;
 else
 	alias ls="ls --color=auto";
