@@ -42,3 +42,7 @@ Thumbs.db
 *.log
 # *.sql
 *.sqlite
+
+# Sublime projects
+*.sublime-project
+*.sublime-workspace
