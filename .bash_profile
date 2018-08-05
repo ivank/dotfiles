@@ -48,22 +48,6 @@ if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
 fi
 
-# Load general colorizer
-if which brew > /dev/null; then
-    source "`brew --prefix grc`/etc/grc.bashrc";
-fi
-
-# Load general colorizer for non-brew systems
-if [ -f ~/.grc/.grc.bashrc ]; then 
-	source ~/.grc/.grc.bashrc;
-fi
-
 # Alias github's hub to git
 # https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
-
-# Add globally installed composer binaries to the PATH
-export PATH="$PATH:$HOME/.composer/vendor/bin"
-
-# added by travis gem
-[ -f ~/travis.sh ] && source ~/travis.sh
