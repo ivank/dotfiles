@@ -35,6 +35,9 @@ for option in autocd globstar; do
     shopt -s "$option" 2> /dev/null;
 done;
 
+# Add aliases
+alias git-local-cleanup="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
+
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
     source "$(brew --prefix)/etc/bash_completion";
@@ -51,3 +54,5 @@ fi
 # Alias github's hub to git
 # https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
+
+export PATH="/usr/local/opt/node@8/bin:$PATH"
