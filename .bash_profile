@@ -1,5 +1,3 @@
-
-# Enable colors for the ls command
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	export CLICOLOR=1;
 else
@@ -55,4 +53,4 @@ fi
 # https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
 
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
