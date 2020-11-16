@@ -11,7 +11,7 @@ brew "git"
 brew "hub"
 brew "icu4c"
 brew "macvim", args: ["with-override-system-vim", "without-python"]
-brew "node@10", link: true
+brew "node@12", link: true
 brew "openssl"
 brew "readline"
 brew "terraform"
@@ -29,4 +29,3 @@ cask "suspicious-package"
 cask "transmission"
 cask "visual-studio-code"
 cask "google-cloud-sdk"
-cask "psequel"
