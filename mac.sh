@@ -20,13 +20,3 @@ fi
 brew tap Homebrew/bundle
 
 brew bundle
-
-if [[ $BASH_VERSINFO < 4 ]]; then
-	# Add the new shell to the list of legit shells
-	echo "Adding bash4 to private shells"
-	sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
-
-	echo "Change your shell to bash 4"
-	# Change the shell for the user
-	chsh -s /usr/local/bin/bash
-fi
