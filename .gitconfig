@@ -12,3 +12,5 @@
 	excludesfile = ~/.gitignore_global
 [include]
     path = ~/.gitconfig_user
+[pull]
+    rebase = false
