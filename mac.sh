@@ -6,7 +6,10 @@
 which -s brew
 if [[ $? != 0 ]] ; then
     echo "Installing brew..."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/ivank/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ivank/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"    
 else
 	echo "Updating brew..."
     brew update
