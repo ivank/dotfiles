@@ -55,7 +55,7 @@ if command -v berglas >&2; then
   echo "berglas already installed"
 else
   echo "Installing berglas"
-  wget --output-document - https://github.com/GoogleCloudPlatform/berglas/releases/download/v2.0.2/berglas_2.0.2_linux_amd64.tar.gz | tar --extract --ungzip --directory /usr/local/bin
+  wget --output-document - https://github.com/GoogleCloudPlatform/berglas/releases/download/v2.0.2/berglas_2.0.2_linux_amd64.tar.gz | sudo tar --extract --ungzip --directory /usr/local/bin
 fi
 
 if command -v tflint >&2; then
