@@ -71,3 +71,10 @@ else
   echo "Installing nvm"
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 fi
+
+if command -v jwt >&2; then
+    echo "jwt installed"
+else 
+    echo "Installing jwt"
+    wget --output-document - https://github.com/mike-engel/jwt-cli/releases/download/6.1.0/jwt-linux.tar.gz | sudo tar --extract --ungzip --directory /usr/local/bin
+fi

@@ -10,6 +10,9 @@ Plug 'scrooloose/syntastic' "Linters
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-sensible'  "Sensible vim defaults
 Plug 'elixir-lang/vim-elixir' "Elixir syntx
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 
